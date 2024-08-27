@@ -13,12 +13,12 @@ const DomainCard = ({ id, title, description, registered, availableSlots }) => {
         </div>
       </div>
       <div className="mt-6 flex justify-between">
-        <Link to={'/Internships/InternDetails/DomainPage/CoursePlans'}>
+        <Link to={'/Internships/Homepage/InternDetails/DomainPage/CoursePlans'}>
         <button className="bg-yellow-500 text-gray-900 font-semibold py-2 px-4 rounded-md shadow-md">
           Apply now
         </button>
         </Link>
-        <Link to={'/Internships/InternDetails/DomainPage/CourseDetails'}><button className="bg-gray-700 text-gray-200 font-semibold py-2 px-4 rounded-md shadow-md">
+        <Link to={'/Internships/Homepage/InternDetails/DomainPage/CourseDetails'}><button className="bg-gray-700 text-gray-200 font-semibold py-2 px-4 rounded-md shadow-md">
           View detail
         </button></Link>
       </div>

@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="bg-gray-900 text-white py-10 px-5 font-times  flex  items-center justify-between">
       <div  className="absolute top-2 left-0 pr-1.5 rounded-tr-md rounded-br-md">
-        <Link to={"/Internships/InternDetails"}>
+        <Link to={"/Internships/Homepage/InternDetails"}>
           <h1 className="bg-Yellow text-black text-semibold md:font-bold text-lg md:text-1.5xl p-1.5 rounded-br-md rounded-tr-md mb-0.75">{"<"} Back&nbsp;&nbsp;</h1>
         </Link>
       </div>
@@ -36,9 +36,9 @@ const About = () => {
             of corporate employee
           </h2>
           <div className="flex justify-center">
-            <button className="bg-[#F5CF6B] text-[#17212E]  font-semibold py-2 px-6 mt-4 rounded-md ">
+            {/* <button className="bg-[#F5CF6B] text-[#17212E]  font-semibold py-2 px-6 mt-4 rounded-md ">
               Apply now
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

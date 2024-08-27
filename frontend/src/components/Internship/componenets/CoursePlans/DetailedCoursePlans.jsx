@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DomainPage from "../DomainPage/DomainPage";
+import CourseDetails from "../CourseDetails/CourseDetails";
 import { Link } from "react-router-dom";
 import image from "./assets/background.png";
 
@@ -26,7 +26,7 @@ const options = [
   },
 ];
 
-const CoursePlans = () => {
+const DetailedCoursePlans = () => {
   const [selectedOption, setSelectedOption] = useState(options[0]);
   const [isVisible, setIsVisible] = useState(true); // State to toggle overlay visibility
 
@@ -55,7 +55,7 @@ const CoursePlans = () => {
     <div className="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 font-inter">
       <div className="relative bg-gray-200 p-8 rounded shadow-lg w-4/5 max-w-2xl">
         {/* Close Button */}
-        <Link to={"/Internships/Homepage/InternDetails/DomainPage"}>
+        <Link to={"/Internships/Homepage/InternDetails/DomainPage/CourseDetails"}>
           <button
             onClick={handleCloseClick}
             className="absolute top-2 right-6 text-red-600 hover:text-red-800 text-3xl"
@@ -122,10 +122,10 @@ const App = () => {
   return (
     <div className="relative">
       <div>
-        <DomainPage />
+        <CourseDetails />
       </div>
       {/* Render the CoursePlans component here */}
-      <CoursePlans />
+      <DetailedCoursePlans />
     </div>
   );
 };

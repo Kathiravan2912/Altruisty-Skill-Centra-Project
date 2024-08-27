@@ -38,6 +38,9 @@ import InternDetail from './components/Internship/componenets/internDetail/Inter
 import HomePage from './components/Internship/componenets/HomePage/HomePage';
 import ProjectPage from './components/Projects/components/ProjectPage';
 import CoursePlans from './components/Internship/componenets/CoursePlans/CoursePlans';
+import DetailedCoursePlans from './components/Internship/componenets/CoursePlans/DetailedCoursePlans';
+import First_page from './components/Internship/componenets/First_page';
+import RegisterForm from './components/Internship/componenets/RegisterForm';
 // import ProjectPage from './components/Projects/components/ProjectPage';
 // import Basic from './components/Projects/components/Routes/Basic';
 // import Premium from './components/Projects/components/Routes/Premium';
@@ -85,13 +88,15 @@ function Main() {
           <Route path='/Profileattribute' element={<Profileattribute />} />
           <Route path='/Subscription' element={<Subscription />} />
 
-          <Route path= '/Internships' element={<HomePage />} />
-          <Route path= '/Internships/InternDetails' element={<InternDetail />} />
-          <Route path='/Internships/InternDetails/DomainPage' element={<DomainPage/>}/>
-          <Route path= '/Internships/InternDetails/DomainPage/CourseDetails' element={<CourseDetails />} />
-          <Route path= '/Internships/InternDetails/DomainPage/CoursePlans' element={<CoursePlans />} />
-          <Route path= '/Internships/InternDetails/DomainPage/CourseDetails/CoursePlans' element={<CoursePlans />} />
-          <Route path= '/Internships/InternDetails/DomainPage/CourseDetails/Explore' element={<Explore />} />
+          <Route path= '/Internships' element={<First_page />} />
+          <Route path= '/Internships/Projects' element={<RegisterForm />} />
+          <Route path= '/Internships/Homepage' element={<HomePage />} />
+          <Route path= '/Internships/Homepage/InternDetails' element={<InternDetail />} />
+          <Route path='/Internships/Homepage/InternDetails/DomainPage' element={<DomainPage/>}/>
+          <Route path= '/Internships/Homepage/InternDetails/DomainPage/CourseDetails' element={<CourseDetails />} />
+          <Route path= '/Internships/Homepage/InternDetails/DomainPage/CoursePlans' element={<CoursePlans />} />
+          <Route path= '/Internships/Homepage/InternDetails/DomainPage/CourseDetails/DetailedCoursePlans' element={<DetailedCoursePlans />} />
+          <Route path= '/Internships/Homepage/InternDetails/DomainPage/CourseDetails/Explore' element={<Explore />} />
           {/* <Route path='/Internships/Projects' element={<ProjectPage/>} />
           <Route path='/Internships/Projects/FullStack' element={<OverView/>} /> */}
 

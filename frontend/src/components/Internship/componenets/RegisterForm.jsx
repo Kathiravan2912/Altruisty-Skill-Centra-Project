@@ -67,7 +67,7 @@ const RegisterForm = () => {
     <div>
       <div className='flex justify-between '>
         <div className='m-6 text-xl font-times font-bold'>
-         <Link to={"/HomePage"}> <h1>{" <  "} &nbsp;back</h1>
+         <Link to={"/Internships"}> <h1>{" <  "} &nbsp;back</h1>
          </Link></div>
         <div>
           <img src={logo} alt="" className='h-20 mr-3' />
