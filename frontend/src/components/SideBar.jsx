@@ -405,7 +405,7 @@ const Sidebar = () => {
           }`}
         >
           <div className="flex flex-col">
-            {/* <<========================View internship===================>> */}
+            {/* <<========================Training internship===================>> */}
 
             <Link
               to={"/Internships"}
